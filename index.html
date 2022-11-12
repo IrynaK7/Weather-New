@@ -20,8 +20,8 @@
   </head>
   <body>
     <div class="container">
-      <div class="weather-app-wrapper">
-        <div class="weather-app">
+      <div class="weather-new-wrapper">
+        <div class="weather-new">
           <div class="overview">
             <h1 id="city"></h1>
             <ul>
@@ -32,15 +32,21 @@
           <div class="row">
             <div class="col-6">
               <div class="clearfix weather-temperature">
-                <img src="" alt="Clear" id="icon" class="float-left" />
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                  alt="Partly Cloudy"
+                  id="icon"
+                  class="float-left"
+                />
                 <div class="float-left">
                   <strong id="temperature"></strong
-                  ><span class="units"> °C</span>
+                  ><span class="units"> °C|°F</span>
                 </div>
               </div>
             </div>
             <div class="col-6">
               <ul>
+                <li>Precipitation: <span id="precipitation"></span>%</li>
                 <li>Humidity: <span id="humidity"></span>%</li>
                 <li>Wind: <span id="wind"></span> m/h</li>
               </ul>
