@@ -16,6 +16,7 @@
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather New</title>
   </head>
@@ -24,9 +25,9 @@
       <div class="weather-new-wrapper">
         <div class="weather-new">
           <div class="overview">
-            <h1>Warsaw</h1>
+            <h1 id="city"></h1>
             <ul>
-              <li>Last updated: <span id="date"></span></li>
+              <li> <span id="date"></span></li>
               <li id="description"></li>
             </ul>
           </div>
@@ -40,7 +41,7 @@
                   class="float-left"
                 />
                 <div class="float-left">
-                  <strong id="temperature">15</strong
+                  <strong id="temperature"></strong
                   ><span class="units"> °C |<a href="#"></a>°F</a> </span>
                 </div>
               </div>
